@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+         
+    /*
+        # = id
+        . - class
+        : = pseudo-class
+        :: = pseudo-element
+        > = children
+    */
+        
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+    color: darkred; /* Define a cor do link visitado como vermelho escuro */
+}
+
+        a:hover {
+    color: black; /* Define a cor do link como preta quando o mouse está sobre ele */
+    text-decoration: underline; /* Adiciona o sublinhado quando o mouse está sobre o link */
+}
+
+        a:active {
+    color: yellow; /* Define a cor do link como amarela quando está sendo clicado */
+}
+
+        .especial {
+    background-color: rgb(255, 199, 199); /* Define a cor de fundo do elemento com a classe 'especial' como rosa claro */
+}
+
+        .especial::before {
+    content: '→'; /* Adiciona uma seta à direita antes do conteúdo do elemento com a classe 'especial' */
+}
+
+        .especial::after {
+    content: '←'; /* Adiciona uma seta à esquerda após o conteúdo do elemento com a classe 'especial' */
+}
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositorio GitHub</a></li>
+        <li><a href="https://youtube.com/CursoEmVideo/" class="especial">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com" class="especial">Sute di CursoEmVideo</a></li>
+       <!-- O atributo target="_blank" faz com que o link seja aberto em uma nova aba ou janela. -->
+    </ul>
+</body>
+</html>
