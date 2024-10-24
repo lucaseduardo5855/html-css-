@@ -4,8 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste de imagem de fundo</title>
-</head>
-<body>
+    <style>
+        body {
+            background-image: url(imagens/wallpaper001.jpg); /* Imagem de fundo da tela */
+        }
     
-</body>
-</html>
+    div.quadrado { /* Estilo geral para quadrados */
+        display: inline-block; /* Elementos lado a lado */
+        border: 2px solid black; /* Borda preta ao redor */
+        border-radius: 10px; /* Cantos arredondados */
+        background-color: lightgray; /* Cor de fundo cinza claro */
+        width: 300px; /* Largura do quadrado */
+        height: 300px; /* Altura do  */
+    }quadrado
+    
+    div#q1 { /* Primeiro quadrado */
+            background-color: skyblue; 
+        }
+    
+    div#q2 { /* Segundo quadrado */
+            background-image: linear-gradient(to bottom, yellow, red); 
+        }   
+    
+    div#q3 { /* Terceiro quadrado */
+            background-image: url(imagens/pattern003.png); 
+        } 
+    </style>
+    </head>
+    <body>
+        <div class="quadrado" id="q1">Conteúdo 1</div>  <!-- Primeiro quadrado -->
+        <div class="quadrado" id="q2">Conteúdo 2</div>  <!-- Segundo quadrado -->
+        <div class="quadrado" id="q3">Conteúdo 3</div>  <!-- Terceiro quadrado -->
+    </body>
+    </html>
+    
