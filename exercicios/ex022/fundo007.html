@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+<style>
+    /* Estilo do contêiner principal */
+    #container {
+        background-image: url(); /* Imagem de fundo (não especificada) */
+        background-size: 100% 100%; /* Ajusta a imagem para cobrir 100% da largura e altura */
+        
+        position: relative; /* Permite que elementos filhos usem posicionamento absoluto */
+        height: 96vh; /* Altura do contêiner é 96% da altura da viewport */
+        padding: 10px; /* Espaçamento interno de 10 pixels */
+        background-color: purple; /* Cor de fundo roxa */
+    }
+
+    /* Estilo do conteúdo interno */
+    #conteudo {
+        background-image: url(); /* Imagem de fundo (não especificada) */
+        background-size: 100% 100%; /* Ajusta a imagem para 100% da largura e altura do conteúdo */
+        
+        position: absolute; /* Posiciona o conteúdo em relação ao contêiner pai */
+        height: 200px; /* Altura do conteúdo é 200 pixels */
+        width: 400px; /* Largura do conteúdo é 400 pixels */
+        background-color: yellow; /* Cor de fundo amarela */
+
+        left: 50%; /* Posiciona o conteúdo a 50% da largura do contêiner */
+        top: 50%; /* Posiciona o conteúdo a 50% da altura do contêiner */
+        
+        transform: translate(-50%, -50%); /* Centraliza completamente o conteúdo */
+    }
+</style>
+</head>
+<body>
+    <section id="container"> <!-- Contêiner principal -->
+        <article id="conteudo"> <!-- Conteúdo interno -->
+        </article>
+    </section>
+</body>
+
+</html>
