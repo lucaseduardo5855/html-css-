@@ -1,0 +1,63 @@
+* {
+    margin: 0px; /* Remove margens padrão de todos os elementos */
+    padding: 0px; /* Remove preenchimento padrão de todos os elementos */
+}
+
+html, body {
+    min-height: 100vh; /* Garante que a altura mínima da página seja 100% da altura da viewport */
+    background-color: darkgrey; /* Define a cor de fundo como cinza escuro */
+}
+
+header {
+    background-color: black; /* Define a cor de fundo do cabeçalho como preto */
+    color: white; /* Define a cor do texto no cabeçalho como branco */
+    text-align: center; /* Centraliza o texto no cabeçalho */
+}
+
+header > h1 {
+    padding-top: 50px; /* Adiciona espaçamento acima do título */
+    font-variant: small-caps; /* Aplica o estilo de letras pequenas em maiúsculas ao título */
+}
+
+header > p {
+    padding-bottom: 50px; /* Adiciona espaçamento abaixo do parágrafo no cabeçalho */
+}
+
+header a, footer a {
+    color: white; /* Define a cor dos links no cabeçalho e rodapé como branco */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-weight: bolder; /* Aumenta a espessura da fonte dos links */
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline; /* Adiciona sublinhado aos links ao passar o mouse */
+}
+
+section {
+    padding-top: 10vh; /* Adiciona espaço acima da seção proporcional à altura da viewport */
+    padding-bottom: 10vh; /* Adiciona espaço abaixo da seção proporcional à altura da viewport */
+    line-height: 2em; /* Define a altura da linha para melhor legibilidade */
+    padding-left: 30px; /* Adiciona espaçamento à esquerda do conteúdo da seção */
+}
+
+section.normal {
+    background-color: white; /* Define a cor de fundo da seção normal como branca */
+    color: black; /* Define a cor do texto na seção normal como preta */
+}
+
+section.imagem {
+    background-color: rgb(75, 75, 75); /* Define a cor de fundo da seção de imagem como cinza escuro */
+    color: white; /* Define a cor do texto na seção de imagem como branca */
+}
+
+section.imagem > p {
+    width: 400px; /* Define a largura do parágrafo dentro da seção de imagem */
+    background-color: rgb(0, 0, 0); /* Define a cor de fundo do parágrafo como preto */
+}
+
+footer {
+    background-color: black; /* Define a cor de fundo do rodapé como preto */
+    text-align: center; /* Centraliza o texto no rodapé */
+    color: white; /* Define a cor do texto no rodapé como branco */
+    padding-bottom: 10px; /* Adiciona espaço abaixo do conteúdo do rodapé */
+}
