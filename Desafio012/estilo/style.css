@@ -1,11 +1,26 @@
+@charset 'UTF-8';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
 * {
     margin: 0px; /* Remove margens padrão de todos os elementos */
     padding: 0px; /* Remove preenchimento padrão de todos os elementos */
+    font-size: 1em;
 }
 
 html, body {
     min-height: 100vh; /* Garante que a altura mínima da página seja 100% da altura da viewport */
     background-color: darkgrey; /* Define a cor de fundo como cinza escuro */
+    font-family: var(--fonte1);
 }
 
 header {
@@ -17,6 +32,8 @@ header {
 header > h1 {
     padding-top: 50px; /* Adiciona espaçamento acima do título */
     font-variant: small-caps; /* Aplica o estilo de letras pequenas em maiúsculas ao título */
+    font-family: var(--fonte2);
+    font-size: 5vw;
 }
 
 header > p {
@@ -38,6 +55,8 @@ section {
     padding-bottom: 10vh; /* Adiciona espaço abaixo da seção proporcional à altura da viewport */
     line-height: 2em; /* Define a altura da linha para melhor legibilidade */
     padding-left: 30px; /* Adiciona espaçamento à esquerda do conteúdo da seção */
+    font-family: var(--fonte3);
+    font-size: 3vw;
 }
 
 section.normal {
@@ -48,6 +67,8 @@ section.normal {
 section.imagem {
     background-color: rgb(75, 75, 75); /* Define a cor de fundo da seção de imagem como cinza escuro */
     color: white; /* Define a cor do texto na seção de imagem como branca */
+    display: inline-block;
+    padding: 5px;
 }
 
 section.imagem > p {
