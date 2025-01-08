@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/* Estilos para telas */
+
+*{
+    margin: 10px;
+    padding: 10px;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5em; /* Define o espaçamento entre as linhas de texto como 1,5 vezes o tamanho da fonte */
+
+menu {
+    display: none; /* não vai ser exibido */
+}
+
+article{
+    width: 100%;
+}
+
+article::after{ /*depois do artigo + after pq vai acontecer uma ação */
+    content: 'Esse artigo foi impresso através do site www.cursoemvideo.com';
+}
+
+
+}
