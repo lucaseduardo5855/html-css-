@@ -1,48 +1,45 @@
-@charset "UTF-8";
-
-/* Versão Mobile First */
-
 *{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte usada nas letras */
+    font-size: 1em; /* Define o tamanho da fonte */
+    margin: 0px; /* Remove as margens padrão dos elementos */
+    padding: 0px; /* Remove o preenchimento (padding) padrão dos elementos */
+    box-sizing: border-box; /* Inclui as bordas e o padding no cálculo da largura e altura dos elementos */
 }
 
- html{
-    height: 100vh;;
+html{
+    height: 100vh; /* Define a altura da página para 100% da altura da janela de visualização (viewport) */
 }
 
 body{
-    background: black url(../imagens/back-phone.jpg) no-repeat;
-    background-size: cover;
-    background-position: center center;
+    background: black url(../imagens/back-phone.jpg) no-repeat; /* Define o fundo da página como uma imagem (black é a cor de fundo de fallback) */
+    background-size: cover; /* Faz a imagem de fundo cobrir toda a tela */
+    background-position: center center; /* Centraliza a imagem de fundo na tela */
 }
 
 main{
-    background-color: rgba(255, 255, 255, 0.808);
-    width: 90vw;
-    margin: auto;
-    margin-top: 20px;
-    border-radius: 10px;
-    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.808); /* Define o fundo do main com uma cor branca semitransparente */
+    width: 90vw; /* Define a largura do main como 90% da largura da janela de visualização */
+    margin: auto; /* Centraliza o main horizontalmente */
+    margin-top: 20px; /* Define a margem superior do main */
+    border-radius: 10px; /* Adiciona bordas arredondadas no main */
+    padding: 10px; /* Adiciona um preenchimento de 10px dentro do main */
 }
 
 h1{
-    text-align: center;
-    color: white;
-    text-shadow: 2px 2px 2px rgb(27, 27, 27);
-    font-size: 2em;
+    text-align: center; /* Centraliza o texto dentro do h1 */
+    color: white; /* Define a cor do texto como branca */
+    text-shadow: 2px 2px 2px rgb(27, 27, 27); /* Adiciona uma sombra ao texto do h1 */
+    font-size: 2em; /* Define o tamanho da fonte do h1 como 2 vezes o tamanho da fonte base */
 }
 
 img{
-    display: block;
-    margin: auto;
+    display: block; /* Faz as imagens se comportarem como blocos (fazendo com que ocupem uma linha inteira) */
+    margin: auto; /* Centraliza as imagens horizontalmente */
 }
 
-img#phone { display: block; }
-img#tablet { display: none; }
-img#print { display: none; }
-img#pc { display: none; }
-img#tv { display: none; }
+/* Por padrão, exibe a imagem do celular e oculta as outras */
+img#phone { display: none; } 
+img#tablet { display: none; } 
+img#print { display: none; } 
+img#pc { display: none; } 
+img#tv { display: none; } 

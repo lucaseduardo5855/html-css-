@@ -2,3 +2,84 @@
 
 /* Todas as demais midias */
 
+/* Typical Devices Breakpoints 
+Pequenas telas: até 600px
+Celular: de 600px ate 768px
+tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes Telas: acima de 1200px
+*/
+
+/* Mídia para impressão (print) */
+@media print { /* Impressão */
+    body {
+        background-image: url(../imagens/icon-print.png); /* Define a imagem de fundo para a impressão, mas é desnecessário, pois o fundo geralmente não aparece na impressão */
+    }
+
+    main {
+        width: 90vw; /* Define a largura do main para 90% da largura da janela de visualização (pode não ter efeito na impressão) */
+        border: 2px solid black; /* Adiciona uma borda preta ao redor do main */
+    }
+
+    main::after { /* Adiciona um conteúdo após o main */
+        content: 'Essa impressão foi feita através do site www.cursoemvideo.com'; /* Define o texto após o conteúdo do main */
+        text-decoration: overline; /* Aplica uma linha superior ao texto */
+    }
+
+    main h1 {
+        text-shadow: none; /* Remove a sombra do texto no título (h1) durante a impressão */
+        color: black; /* Define a cor do texto como preta */
+    }
+
+    /* Oculta todas as imagens, exceto o ícone de impressão */
+    img#phone { display: none; } 
+    img#tablet { display: none; } 
+    img#print { display: block; } 
+    img#pc { display: none; }
+    img#tv { display: none; } 
+}
+
+/* Mídia para tablet (768px a 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        background-image: url(../imagens/back-tablet.jpg); /* Define o fundo como a imagem para tablets */
+    }
+
+    /* Apenas a imagem do tablet deve ser exibida */
+    img#phone { display: none; } 
+    img#print { display: none; } 
+    img#pc { display: none; } 
+    img#tv { display: none; } 
+}
+
+/* Mídia para desktop (1025px a 1440px) */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+    body {
+        background-image: url(../imagens/back-pc.jpg); /* Define o fundo como a imagem para desktops */
+    }
+
+    /* Somente a imagem do desktop deve ser exibida */
+    img#phone { display: none; } 
+    img#tablet { display: none; } 
+    img#print { display: none; } 
+    img#pc { display: block; } 
+    img#tv { display: none; } 
+}
+
+/* Mídia para grandes telas (acima de 1440px) */
+@media screen and (min-width: 1441px) {
+    body {
+        background-image: url(../imagens/back-tv.jpg); /* Define o fundo como a imagem para grandes telas (TV) */
+    }
+
+    main {
+        width: 700px; /* Define a largura do main para 700px em grandes telas */
+    }
+
+    /* Somente a imagem para TV deve ser exibida */
+    img#phone { display: none; } 
+    img#tablet { display: none; } 
+    img#print { display: none; } 
+    img#pc { display: none; } 
+    img#tv { display: block; } 
+}
