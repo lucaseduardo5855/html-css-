@@ -1,0 +1,42 @@
+FLEX-DIRECTION 
+---------------------
+ROW = linha (esquerda pra direita pro nosso idioma) obs: sabendo a direção a gente coloca elementos nessa direção 
+
+ROW Reverse = (Direita pra esquerda)
+
+Column = (Coluna de um castelo em PÉ EXEMPLO; de cima para baixo)
+
+Column-Reverse = (Em Pé, mas de baixo pra cima)
+
+
+
+FLEX-WRAP
+----------------------
+NOWRAP = NÃO QUEBRAR (SE ADAPTA NO CONTAINER)
+
+WRAP =  QUEBRA DELE É SEMPRE NO EIXO TRANSVERSAL NO SENTIDO DO CROSS-AXIS
+
+WRAP-RESERVE = (ELE VAI QUEBRAR MAS NO SENTIDO OPOSTO DO EIXO TRANSVERSAL)
+
+
+
+FLEX-FLOW
+----------------------
+EXEMPLO: ROW NOWRAP
+
+
+
+JUSTIFY-CONTENT
+----------------------
+FLEX-START = primeiro item fica grudado no main-start e o espaço em branco no main-end
+
+FLEX-END = Ultimo item fica grudado no main-end e o espaço em branco no main-start
+
+CENTER = Centro do container, todos os itens juntos no centro e os espaços em branco vai ser distribuido no main-start e no main-end
+
+SPACE-BETWEEN = Primeiro item no main-start e o ultimo item no main-end e o resto vai ficar no meio centralizado
+
+SPACE-EVELYN = Colocar os itens dentro do container com espaçamentos iguais entre os elementos
+
+SPACE-AROUND =  Distribui os itens dentro do container com espaçamento igual entre eles e ao redor de cada item.
+

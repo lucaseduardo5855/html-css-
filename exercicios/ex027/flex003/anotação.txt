@@ -1,0 +1,14 @@
+FLEX-DIRECTION 
+---------------------
+ROW = linha (esquerda pra direita pro nosso idioma) obs: sabendo a direção a gente coloca elementos nessa direção 
+ROW Reverse = (Direita pra esquerda)
+Column = (Coluna de um castelo em PÉ EXEMPLO; de cima para baixo)
+Column-Reverse = (Em Pé, mas de baixo pra cima)
+
+
+
+FLEX-WRAP
+----------------------
+NOWRAP = NÃO QUEBRAR (SE ADAPTA NO CONTAINER)
+WRAP =  QUEBRA DELE É SEMPRE NO EIXO TRANSVERSAL NO SENTIDO DO CROSS-AXIS
+WRAP-RESERVE = (ELE VAI QUEBRAR MAS NO SENTIDO OPOSTO DO EIXO TRANSVERSAL)
