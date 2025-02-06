@@ -92,14 +92,3 @@ ALIGN-SELF = Se aplica a cada um dos itens, ele vai funcionar diretamento no cro
 
 
 
-
-
-
-FLEX-SHRINK: 1  (1 pode encolher, 0 não pode encolher)
-FLEX-GROW: 0  (1 pode crescer, 0 não pode crescer)
-
-FLEX-SHRINK: 1  - pode encolher
-FLEX-GROW: 1  - pode crescer
-
-FLEX-SHRINK: 0  - não pode encolher
-FLEX-GROW: 1  - pode crescer
