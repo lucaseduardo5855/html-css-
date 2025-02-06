@@ -83,12 +83,7 @@ OBS: ALIGN-CONTENT É USANDO WRAP
 
 
 
-ITENS     OBS: FLEX:AUTO ou etc é aplicado nos itens não nos CONTAINERS
+ITENS 
 ----------------------
 ORDER = Todo item em flexbox (dentro do branco) vai ter order 0 exemplo: item com -2; 0; 3; 5 (vao ser feito de ordem crescente) outro exemplo - 0;0;4;9
-
-ALIGN-SELF = Se aplica a cada um dos itens, ele vai funcionar diretamento no cross-axis; (auto=pega alinhamento do pai; flex-start = alinhamento perto do cross-start; flex-end = alinhamento grudado com o cross-end; Center = calcular o meio; Strech = puxa para ocupar o espaço inteiro)
-
-
-
 
