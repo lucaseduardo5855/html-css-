@@ -74,6 +74,3 @@ Space BETWEEN = Vai pegar os primeiros elementos e deixar perto do cross-start, 
 Space-EVELYN = Coloca um espaço no cross-star e no cross-end e o no meio fica espaçado tambem
 
 Space-AROUND = Começa dividindo o cross axis em partes iguais, ele vai por elementos e ele vai dentro da área centralizar os elementos.
-
-
-OBS: ALIGN-CONTENT É USANDO WRAP 
