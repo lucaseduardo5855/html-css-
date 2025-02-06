@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container{  /* CLASSE PAI - PRINCIPAL:  DISPLAY: FLEX */
+            background-color: rgb(187, 255, 0);
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item{ /* CLASSE FILHO - PRINCIPAL:  FLEX: AUTO */
+            background-color: rgb(125, 125, 211);
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 200px;
+        }
+
+        div#cxA{
+           flex-shrink: 1; 
+           flex-grow: 0; 
+        }
+
+        div#cxB{
+           flex-shrink: 1;
+           flex-grow: 1; 
+        }
+
+        div#cxC{
+           flex-shrink: 0;
+           flex-grow: 1; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container"> <!--CLASSE PAI-->
+        <div class="item" id="cxA">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, commodi. Error in at, consequatur repellat voluptatibus quod dignissimos itaque aliquid fugiat blanditiis quibusdam dolorem officia doloribus. Inventore at est quae!</div> <!--DIV'S FILHO-->
+        <div class="item" id="cxB">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, animi nesciunt eum libero debitis illum non ipsa fugiat nobis quos rem illo vero quasi optio dolor similique atque explicabo minima. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sint tenetur nisi vitae, quaerat deleniti perspiciatis quam nobis quos maiores accusantium distinctio, perferendis velit cum necessitatibus est sapiente commodi magnam?</div>
+        <div class="item" id="cxC">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam cumque veritatis neque quod libero. Aliquam modi distinctio quisquam alias, laboriosam error minus beatae quas debitis illum, tempora dolores, blanditiis saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, necessitatibus? Aliquid, saepe est. Nam quis veniam, nisi natus ratione explicabo quod assumenda sed placeat quos, mollitia ipsa qui quasi molestias. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti magnam necessitatibus sint ducimus ut rerum quo blanditiis iste dicta minus, doloribus eius commodi repellat dolorum eaque odit fugiat! Vel, assumenda.</div>
+    </div>
+</body>
+</html>
