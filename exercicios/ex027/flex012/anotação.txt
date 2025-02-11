@@ -104,10 +104,3 @@ FLEX-GROW: 1  - pode crescer
 FLEX-SHRINK: 0  - não pode encolher
 FLEX-GROW: 1  - pode crescer
 
-FLEX: GROW / SHRINK / BASIS = (É A ORDEM EM FLEX) ex: 0 1 150px; 2 0 150px;
-FLEX: 0 1 AUTO = (flex: initial)
-FLEX: 0 0 AUTO - (nao pode crescer, não pode encolher) = (none)
-FLEX: 1 1 AUTO = (crescer a vontade e diminuir a vontade) = (auto)
-
-
-
