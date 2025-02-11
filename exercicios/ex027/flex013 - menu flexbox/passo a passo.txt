@@ -1,0 +1,13 @@
+Passo a passo flexbox menu
+
+primeiro vamos fazer o cabeçalho
+logo em seguida vamos por nosso titulo
+e um menu que dentro tem as opções 1 a 6
+temos o corpo do programa (m..) com 2 paragrafos
+vamos criar um estilo
+e no estilo vamos fazer as conf padrão para geral
+vamos colocar fundo uma cor o tamanho da letra em 1, arrumar a fonte das letras, altura e largura padrão
+no cabeçalho vamos por uma cor de fundo uma cor de letra, e um espaçamento
+no titulo do meu cabeçalho vamos por uma border pontilhada preta
+e no menu do meu cabeçalho tambem vamos por um menu pontilhado preto
+no corpo do meu programa vamos por uma cor branca, uma margem, um espaçamento, e um arredondamento nele com uma sombra
