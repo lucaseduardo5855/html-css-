@@ -17,15 +17,40 @@ body{
 header{
     background-color: grey;
     color: white;
-    padding: 10px;
+    padding: 17px;
+
+    display: flex;
+    flex-flow: row nowrap; /* row é deixar itens da esquerda para direita e nowrap é não quebrar se adaptar no container */
+    justify-content: space-between; /* Primeiro item no main-start e o ultimo item no main-end e o resto vai ficar no meio centralizado */
+    align-items: center;
 }
 
 header > h1{
     border: 1px dotted black;
-}
+    flex: 0 0 200px; /* nao vai crescer (grow) nao vai encolher (shrink) e vai ficar fixo em 200px */
+} 
 
 header > nav{
     border: 1px dotted black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+header > nav > a{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+header > nav > a:hover{
+    background-color: white;
+    color: black;
+    transition: background-color 0.6s;
 }
 
 main{
